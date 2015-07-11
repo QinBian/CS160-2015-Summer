@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <!--<TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" /> -->
+
+    <!--<com.twitter.sdk.android.tweetui.TweetView
+        xmlns:twittersdk="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/photo_default_tweet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        twittersdk:tw__tweet_id="20"/> -->
+
+    <ImageView
+        android:layout_width="310dp"
+        android:layout_height="423dp"
+        android:src="@drawable/dog"
+        android:layout_marginTop="210dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageView" />
+
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+        android:id="@+id/twitter_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp" />
+
+
+</RelativeLayout>
